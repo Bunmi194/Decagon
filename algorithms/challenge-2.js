@@ -8,7 +8,7 @@ function fizzBuzz(input){
         output = "buzz";
     }else if(input % 3 == 0 ){
         output = "fizz";
-    }else if(isNaN(input) == false){
+    }else if(input > 0 || input < 0){
         output = input;
     }else{
         output = "Please enter a number";
