@@ -3,12 +3,12 @@
 function fizzBuzz(input){
     var output = "";
     if (input % 3 == 0 && (input % 5 == 0)) {
-        output = "fizzbuzz";
+        output = "fizzBuzz";
     }else if(input % 5 == 0){
         output = "buzz";
     }else if(input % 3 == 0 ){
         output = "fizz";
-    }else if(input > 0 || input < 0){
+    }else if(isNaN(input) == false){
         output = input;
     }else{
         output = "Please enter a number";
